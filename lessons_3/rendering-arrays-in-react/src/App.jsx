@@ -44,6 +44,8 @@ function App() {
           <div key={index}>
             <h2>{learner.name}</h2>
             <p>{learner.bio}</p>
+            <p>Current Score: {learner.scores[learner.scores.length - 1].score}</p>
+            <p>Date: {learner.scores[learner.scores.length - 1].date}</p>
           </div>
         ))}
       </header>
